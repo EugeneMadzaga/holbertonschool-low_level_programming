@@ -1,32 +1,37 @@
 #include <stdio.h>
+
 /**
- * main - entry point
- *
- * Return: alway returns 0
- *
- */
+* main - Prints 3 combination of numbers
+*
+* Return: Always (Success)
+*/
 int main(void)
 {
-int i;
-int j;
+int c, i, k;
 
-for (i = 0; i <= 99; i++)
+for (c = '0'; c <= '9'; c++)
 {
-for (j = i + 1; j <= 99; j++)
+for (i = '0'; i <= '9'; i++)
 {
-putchar(i / 10 + '0');
-putchar(i % 10 + '0');
-putchar(' ');
-putchar(j / 10 + '0');
-putchar(j % 10 + '0');
+for (k = '0'; k <= '9'; k++)
+{
+if (c < i && i < k)
+{
+putchar(c);
+putchar(i);
+putchar(k);
 
-if (!(i == 98 && j == 99))
+if (c != '7')
 {
 putchar(',');
 putchar(' ');
 }
 }
 }
+}
+}
+
 putchar('\n');
+
 return (0);
 }
