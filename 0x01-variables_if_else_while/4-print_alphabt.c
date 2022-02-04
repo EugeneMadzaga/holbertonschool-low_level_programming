@@ -1,22 +1,23 @@
 #include <stdio.h>
+
 /**
- * main - entry point
- *
- * Return: alway returns 0
- *
- */
+* main - Prints some letters of alphabet
+*
+* Return: Always (Success)
+*/
 int main(void)
 {
-char a;
+char c;
 
-for (a = 'a'; a <= 'z' ; a++)
+for (c = 'a'; c <= 'z'; c++)
 {
-if (a == 'q' || a == 'e')
+if (c != 'e' && c != 'q')
 {
-continue;
+putchar(c);
 }
-putchar(a);
 }
+
 putchar('\n');
+
 return (0);
 }
