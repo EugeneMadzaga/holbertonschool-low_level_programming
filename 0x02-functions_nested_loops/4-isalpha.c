@@ -1,16 +1,16 @@
-#include "_putchar"
+#include "main.h"
 /**
+ *_isalpha - prints if character is alphabet
  *
- *main - Entry point
- *
- *Return: 1 if true, 0 if false
+ *Return: 1 or 0
  *
  */
 int _isalpha(int c)
 {
-  if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-    {
-	return (1);
-    }
-	return (0);
+if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+{
+return (1);
+}
+
+return (0);
 }
