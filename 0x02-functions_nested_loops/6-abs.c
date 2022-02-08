@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 *_abs - main function
-*@c: The number to be computed
+*@n: The number to be computed
 *
 *Return: zero value
 *
