@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *_islower - prints if c is lower case
- *
+ *@c: character to use
  *
  *Return: 1 or 0
  *
