@@ -1,19 +1,19 @@
-#include "_putchar"
+#include "main.h"
 /**
- *main - Entry point
+ *print_alphabet_x10 - prints alphabet 10 times
  *
- *Return: always return 0;
+ *Return: void
  *
  */
 void 2-print_alphabet_x10(void)
 {
-  char i;
-  char h;
+char i;
+char h;
 
-  for (h = 0; h <= 9; h++)
-    {
-      _putchar(i);
-    }
+for (h = 0; h <= 9; h++)
+{
+_putchar(i);
+}
 
-  _putchar('\n');
+_putchar('\n');
 }
