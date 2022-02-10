@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  *_isupper - Looks for an uppercase character
  *@c: Character that will be chcecked
