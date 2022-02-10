@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- *_isupper - Looks for an uppercase character
+ *_isupper - checks for an uppercase character
  *@c: Character that will be chcecked
- *
  *Return: 1 if character is uppercase else 0
  */
 int _isupper(int c)
