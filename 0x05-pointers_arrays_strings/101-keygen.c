@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time>
 
 /**
  * main - random password generator for 101-crackme
