@@ -1,32 +1,20 @@
 #include "main.h"
-
 /**
- * _strncpy - Copy string
- * @dest: Pointer to be appended, array that returns
- * @scr: Source value
- * @n: Number of copy limit
- * Return: char value
+ * _strncpy - copies a string
+ * @dest: destination.
+ * @src: source.
+ * @n: amount of bytes from src.
+ * Return: the pointer to dest.
  */
+
 char *_strncpy(char *dest, char *src, int n)
 {
-int a = 0, b = 0;
+	int i;
 
-while (src[b])
-{
-b++;
-}
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+	for ( ; i < n; i++)
+		dest[i] = '\0';
 
-while (a < n && src[a])
-{
-dest[a] = src[a];
-a++;
-}
-
-while (a < n)
-{
-dest[a] = '\0';
-a++;
-}
-
-return (dest);
+	return (dest);
 }
