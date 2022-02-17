@@ -3,23 +3,31 @@
 /**
  *_strncpy - Copy string
  *@dest: Pointer to be appended
- *@scr: Pointer to be appended to dest
- *@n: my counter
+ *@scr: Source value
+ *@n: Number of copy limit
  *
  *return: Return dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-int index = 0, src_len = 0;
+int a = 0, b = 0;
 
-while (src[index++])
-src_len++;
+while (src[b])
+{
+b++;
+}
 
-for (index = 0; src[index] && index < n; index++)
-dest[index] = src[index];
+while (a < n && src[a])
+{
+dest[a] = src[a];
+a++;
+}
 
-for (index = src_len; index < n; index++)
-dest[index] = '\0';
+while (a < n)
+{
+dest[a] = '\0';
+a++;
+}
 
 return (dest);
 }
