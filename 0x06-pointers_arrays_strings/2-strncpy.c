@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strncpy - Copy string
  * @dest: Pointer to be appended, array that returns
