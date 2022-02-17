@@ -5,6 +5,7 @@
  * @s: input string.
  * Return: the pointer to dest.
  */
+
 char *string_toupper(char *str)
 {
 int index = 0;
