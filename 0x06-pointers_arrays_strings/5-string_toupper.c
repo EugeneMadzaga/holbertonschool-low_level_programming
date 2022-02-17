@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *5-string_toupper.c - Change string from lowercase to uppercase
+ *string_toupper - Change string from lowercase to uppercase
  *@str: String to be changed
  *
  *return: A pointer to be chaged

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *2-strncpy.c - Copy string
+ *_strncpy - Copy string
  *@dest: Pointer to be appended
  *@scr: Pointer to be appended to dest
  *@n: my counter
