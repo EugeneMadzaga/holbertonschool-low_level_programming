@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
  *1-strncat.c - Concatenates two strings
  *@dest: The string to be appended
