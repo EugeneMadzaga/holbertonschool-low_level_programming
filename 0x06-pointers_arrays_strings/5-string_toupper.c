@@ -6,17 +6,16 @@
  * Return: the pointer to dest.
  */
 
-char *string_toupper(char *str)
+char *string_toupper(char *s)
 {
-int index = 0;
+	int count = 0;
 
-while (str[index])
-{
-if (str[index] >= 'a' && str[index] <= 'z')
-str[index] -= 32;
+	while (*(s + count) != '\0')
+	{
+		if ((*(s + count) >= 97) && (*(s + count) <= 122))
+			*(s + count) = *(s + count) - 32;
+		count++;
+	}
 
-index++;
-}
-
-return (str);
+	return (s);
 }
