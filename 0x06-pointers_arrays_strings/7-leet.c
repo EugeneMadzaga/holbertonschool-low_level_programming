@@ -1,11 +1,10 @@
 #include "main.h"
-
 /**
- *leet - Encode string to 1337
- *@str: String to be encoded
- *
- *return: A pointer with encode string
+ * leet - Encode string to 1337
+ * @str: String to be encoded
+ * Return: A pointer with encode string
  */
+
 char *leet(char *str)
 {
 int indx1 = 0, indx2;
