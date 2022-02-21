@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio>
+#include <stdio.h>
 /**
  * _strspn - get length of a prefix substring
  * @s: String to go through
