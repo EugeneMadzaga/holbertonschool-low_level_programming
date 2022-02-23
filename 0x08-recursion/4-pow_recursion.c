@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * _pow_recursion - Returns the value of x raised to the power of y.
  * @x: Number to be used
  * @y: Power value
