@@ -62,4 +62,9 @@ char **strtow(char *str)
 			i += j;
 		}
 		else
+			i++;
+	}
 
+	tab[words] = NULL;
+	return (tab);
+}
