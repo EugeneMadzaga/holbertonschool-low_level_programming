@@ -1,4 +1,5 @@
 ; File: 100-hello_world.asm
+; Auth: Eugene Madzaga
 ; Desc: 64-bit assembly program that prints
 ;       Hello, world followed by a new line.
 
