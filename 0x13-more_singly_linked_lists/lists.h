@@ -1,25 +1,7 @@
-#ifndef LISTS_H
-#define LISTS_H
-#include <stddef.h>
-#include <stdlib.h>
+#ifndef ZETA
+#define ZETA
 #include <stdio.h>
-
-int _putchar(char c);
-/**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
- * @next: points to the next node
- *
- * Description: singly linked list node structure
- * for Holberton project
- */
-typedef struct list_s
-{
-	char *str;
-	unsigned int len;
-	struct list_s *next;
-} list_t;
+#include <stdlib.h>
 /**
  * struct listint_s - singly linked list
  * @n: integer
@@ -33,11 +15,21 @@ typedef struct listint_s
 	int n;
 	struct listint_s *next;
 } listint_t;
-size_t print_list(const list_t *h);
-size_t list_len(const list_t *h);
-list_t *add_node(list_t **head, const char *str);
-list_t *add_node_end(list_t **head, const char *str);
-void free_list(list_t *head);
+
+/**
+ * struct aux - auxiliar linked list
+ * @p: pointer to be storage
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ * for Holberton project
+ */
+typedef struct aux
+{
+	void *p;
+	struct aux *next;
+} aux_list;
+
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
@@ -53,4 +45,5 @@ listint_t *reverse_listint(listint_t **head);
 size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
+void free_aux(aux_list *p);
 #endif
